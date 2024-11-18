@@ -105,7 +105,7 @@ function App() {
       });    
     return (
         <>
-            <div className='app flex flex-wrap'>
+            <div className='app flex flex-wrap ml-3'>
             <AppTitle  />
             <Board squares={currentSquares} handlePlay={handlePlay} isXnext={isXnext}/>
             <InfoPanel moves={moves} squares={currentSquares}/>
