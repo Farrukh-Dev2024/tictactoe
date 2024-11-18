@@ -1,0 +1,41 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* start default button css*/
+button{
+  border: 1px;
+  border-style: solid;
+  padding: 0px 8px;
+  margin: 2px;
+}
+button:hover{
+  border-color: red;
+}
+button:active{
+  border-color: black;
+}
+
+.square{
+  border: 1px;
+  border-style: solid;
+  padding: 0px;
+  margin: 0px;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  vertical-align: middle;  
+}
+.square:hover{
+  border-color: red;
+}
+.square:active{
+  border-color: black;
+}
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
