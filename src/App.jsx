@@ -31,7 +31,7 @@ function Board({squares,handlePlay,isXnext}){
         handlePlay(newsquares,isXnext);
     }
     return(
-        <div className='board min-w-60 m-1'>
+        <div className='board min-w-60 m-2'>
             <div className="board-row">
                 <Button onClick={()=>{handleClick(0);}} value={squares[0]} />
                 <Button onClick={()=>{handleClick(1);}} value={squares[1]} />
@@ -59,7 +59,7 @@ function InfoPanel({moves ,squares}){
     let winner = calculateWinner(squares);
     return(
         <>
-        <div className='infopanel m-1 ml-3'>
+        <div className='infopanel m-1 ml-4'>
             {winner && 
                 <p>Winner is {winner}</p>
             }            
